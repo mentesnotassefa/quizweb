@@ -1,0 +1,106 @@
+.auth-container {
+    color: #f4f0f0;
+  max-width: 400px;
+  width: 100%;
+  margin: 20px auto; /* This centers the container horizontally */
+  padding: 2rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Perfect centering */
+}
+
+.auth-container h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.form-group input {
+    color: rgb(0, 0, 0);
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #a9a4a4;
+  border-radius: 4px;
+}
+
+button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #080ec1;
+  color: rgb(101, 90, 90);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #000000;
+  color: white
+}
+
+.auth-actions {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.forgot-password, .back-to-login {
+  background-color: transparent;
+  color: #646cff;
+  text-decoration: underline;
+  padding: 0;
+}
+
+.forgot-password:hover, .back-to-login:hover {
+  background-color: transparent;
+  color: #535bf2;
+}
+
+.error-message {
+  color: #ff4d4f;
+  margin-bottom: 1rem;
+}
+
+.success-message {
+  color: #52c41a;
+  margin-bottom: 1rem;
+}
+
+.auth-page {
+    
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.auth-error {
+  color: #ff4d4f;
+  background-color: #fff2f0;
+  border: 1px solid #ffccc7;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: 4px;
+}
+
+/* For mobile responsiveness */
+@media (max-width: 480px) {
+  .auth-container {
+    width: 90%;
+    padding: 1.5rem;
+  }
+}
